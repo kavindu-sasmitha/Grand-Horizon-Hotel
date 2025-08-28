@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grand Horizon Hotel - Home</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link href="styles.css" rel="stylesheet" />
+    <style>
+      :root {
+        --primary-color: #007bff;
+        --secondary-color: #ffc107;
+      }
+      body {
+        font-family: 'Arial', sans-serif;
+      }
+      .hero-section {
+        background: url("/asset/image/hoteldoor.jpg")
+          no-repeat center center;
+        background-size: cover;
+        min-height: 80vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+      }
+      .explore-btn {
+        background: url("https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9")
+          no-repeat center center;
+        background-size: cover;
+        background-color: rgba(86, 55, 55, 0.5);
+        background-blend-mode: overlay;
+        color: var(--secondary-color) !important;
+        padding: 0.75rem 1.5rem;
+        font-weight: bold;
+      }
+      .navbar-brand img {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        margin-right: 0.5rem;
+      }
+      .carousel-item img {
+        height: 400px;
+        object-fit: cover;
+        width: 100%;
+      }
+      @media (max-width: 768px) {
+        .hero-section {
+          min-height: 60vh;
+        }
+        .hero-section h1 {
+          font-size: 2rem;
+        }
+        .carousel-item img {
+          height: 250px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand text-warning" href="index.html">
+            <img
+              src="/asset/image/logo.jpg"
+              alt="Grand Horizon Hotel Logo"
+              class="img-fluid"
+            />
+            <b>Grand Horizon Hotel</b>
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html"
+                  >Home</a
+                >
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="rooms.html">Rooms</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="dining.html">Dining</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact</a>
+              </liAttempting to create a new artifact
+              <li class="nav-item">
+                <a class="nav-link btn btn-primary text-white ms-2" href="#"
+                  >Book Now</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-section">
+        <div class="container">
+          <h1 class="display-4 fw-bold">Welcome to Grand Horizon Hotel</h1>
+          <p class="lead bg-primary bg-opacity-25 p-2 rounded">
+            Experience luxury and comfort in the heart of the city
+          </p>
+          <a
+            href="rooms.html"
+            class="btn btn-primary btn-lg explore-btn"
+            >Explore Rooms</a
+          >
+        </div>
+      </section>
+
+      <section id="carousel" class="py-5">
+        <div class="container">
+          <div
+            id="hotelCarousel"
+            class="carousel slide"
+            data-bs-ride="carousel"
+          >
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img
+                  src="https://images.unsplash.com/photo-1566073771259-6a8506099945"
+                  class="d-block w-100 img-fluid"
+                  alt="Hotel Lobby"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Grand Lobby</h5>
+                  <p>Welcome to our elegant and spacious lobby.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://images.unsplash.com/photo-1616046229478-9901c5536a45"
+                  class="d-block w-100 img-fluid"
+                  alt="Spa"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Luxury Spa</h5>
+                  <p>Relax and rejuvenate in our world-class spa.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd"
+                  class="d-block w-100 img-fluid"
+                  alt="Pool"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Infinity Pool</h5>
+                  <p>Enjoy a refreshing swim with stunning city views.</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img
+                  src="https://images.unsplash.com/photo-1571003123894-1f0594d2b5d9"
+                  class="d-block w-100 img-fluid"
+                  alt="Conference Room"
+                />
+                <div class="carousel-caption d-none d-md-block">
+                  <h5>Conference Facilities</h5>
+                  <p>Host your events in our state-of-the-art meeting rooms.</p>
+                </div>
+              </div>
+            </div>
+            <button
+              class="carousel-control-prev"
+              type="button"
+              data-bs-target="#hotelCarousel"
+              data-bs-slide="prev"
+            >
+              <span
+                class="carousel-control-prev-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button
+              class="carousel-control-next"
+              type="button"
+              data-bs-target="#hotelCarousel"
+              data-bs-slide="next"
+            >
+              <span
+                class="carousel-control-next-icon"
+                aria-hidden="true"
+              ></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-white py-4">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <h5>Grand Horizon Hotel</h5>
+            <p>1234 Serenity Lane, Cityville, ST 56789</p>
+          </div>
+          <div class="col-md-4">
+            <h5>Contact Us</h5>
+            <p>
+              Email:
+              <a href="mailto:info@grandhorizon.com" class="text-white"
+                >info@grandhorizon.com</a
+              >
+            </p>
+            <p>
+              Phone:
+              <a href="tel:+1234567890" class="text-white">(123) 456-7890</a>
+            </p>
+          </div>
+          <div class="col-md-4">
+            <h5>Follow Us</h5>
+            <a href="#" class="text-white me-2"
+              ><i class="bi bi-facebook"></i> Facebook</a
+            >
+            <a href="#" class="text-white"
+              ><i class="bi bi-twitter"></i> Twitter</a
+            >
+          </div>
+        </div>
+        <div class="text-center mt-3">
+          <p>&copy; 2025 Grand Horizon Hotel. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
